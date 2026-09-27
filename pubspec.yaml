@@ -1,0 +1,25 @@
+name: snack_spotter
+description: "Real-time snack detection app using YOLOv8n - detects bhujiya, dorito, and maggie masala."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ultralytics_yolo: ^0.6.9
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/
+    - assets/labels.txt
